@@ -1,25 +1,49 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Axios from 'axios';
+import QuoteCard from './quoteCard'
+import { useDarkMode } from './hooks/useDarkMode'
+import dark from './images/dark.png'
 
 function App() {
+  const [darkMode, setDarkMode] = useDarkMode(false);
+    
+  const toggleMode = e => {
+    e.preventDefault();
+    setDarkMode(!darkMode);
+  };
+  function handleChange(){
+    window.location.href = window.location.pathname + window.location.search + window.location.hash;
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Get Motivated With Yeezus</h1>
+    </div> 
+    <div className="dark-mode_toggle">
+        <img
+        src={dark}
+          onClick={toggleMode}
+          className={darkMode ? 'toggle toggled' : 'toggle'} 
+        /> 
+      </div>
+
+    <div className="quote-container">
+      <QuoteCard />
+      <QuoteCard />
+      <QuoteCard />
+      <QuoteCard />
+      <QuoteCard />
     </div>
+    <div className="new">
+      <button onClick={handleChange} className="myButton">New Quotes?</button>
+
+    </div>
+
+
+  </div>
   );
 }
 
