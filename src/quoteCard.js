@@ -21,6 +21,27 @@ import kanye17 from './images/kanye17.jpg'
 import kanye18 from './images/kanye18.jpg'
 import kanye19 from './images/kanye19.jpg'
 import kanye20 from './images/kanye20.jpg'
+import kanye21 from './images/kanye21.jpg'
+import kanye22 from './images/kanye22.jpg'
+import kanye23 from './images/kanye23.jpg'
+import kanye24 from './images/kanye24.jpg'
+import kanye25 from './images/kanye25.jpg'
+import kanye26 from './images/kanye26.jpg'
+import kanye27 from './images/kanye27.jpg'
+import kanye28 from './images/kanye28.png'
+import kanye29 from './images/kanye29.jpg'
+import kanye30 from './images/kanye30.jpg'
+import kanye31 from './images/kanye31.jpg'
+import kanye32 from './images/kanye32.jpg'
+import kanye33 from './images/kanye33.jpg'
+import kanye34 from './images/kanye34.jpg'
+import kanye35 from './images/kanye35.jpg'
+import kanye36 from './images/kanye36.png'
+import kanye37 from './images/kanye37.jpg'
+import kanye38 from './images/kanye38.jpg'
+import kanye39 from './images/kanye39.png'
+import kanye40 from './images/kanye40.jpg'
+
 
 
 
@@ -53,7 +74,29 @@ const QuoteCard = props => {
         kanye17,
         kanye18,
         kanye19,
-        kanye20
+        kanye20,
+        kanye21,
+        kanye22,
+        kanye23,
+        kanye24,
+        kanye25,
+        kanye26,
+        kanye27,
+        kanye28,
+        kanye29,
+        kanye30,
+        kanye31,
+        kanye32,
+        kanye33,
+        kanye34,
+        kanye35,
+        kanye36,
+        kanye37,
+        kanye38,
+        kanye39,
+        kanye40,
+
+
 
     ]
     
@@ -85,7 +128,7 @@ const QuoteCard = props => {
                 <img src={randomValue} className="kanye-img" alt="kanye"></img>
             </div>
             <div class="flip-card-back">
-                <h2>"{quote}"</h2>
+                <h2 className="quote-text">"{quote}"</h2>
             </div>
         </div>
     </div>

@@ -138,3 +138,25 @@
     position:relative;
     top:1px;
   }
+
+  @media only screen and (max-width: 800px) {
+    .App{
+      height:130vh;
+      border:1px solid blue;
+    }
+    .flip-card {
+      margin-top:5%;
+      width:35%;
+      height:40%;
+
+    }
+    img{
+      width:40%
+    }
+    .myButton{
+      margin-top:65%;
+    }
+    .quote-text{
+      font-size: .8em;
+    }
+  }
