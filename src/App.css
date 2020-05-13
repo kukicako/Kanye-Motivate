@@ -142,7 +142,7 @@
   @media only screen and (max-width: 800px) {
     .App{
       height:130vh;
-      border:1px solid blue;
+      /* border:1px solid blue; */
     }
     .flip-card {
       margin-top:5%;
