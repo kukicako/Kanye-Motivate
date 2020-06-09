@@ -105,7 +105,10 @@ const QuoteCard = props => {
 
 
 
+
+
     
+
     useEffect(() => {
     Axios
     .get('https://api.kanye.rest')
