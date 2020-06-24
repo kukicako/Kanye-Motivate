@@ -98,6 +98,9 @@ const QuoteCard = props => {
 
 
 
+        
+
+
     ]
     
     const randomValue = images[Math.floor(Math.random() * images.length)];
