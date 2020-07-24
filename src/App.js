@@ -39,6 +39,7 @@ function App() {
     </div>
     <div className="new">
       <button onClick={handleChange} className="myButton">New Quotes?</button>
+      <p>VOTE KANYE 2020</p>
 
     </div>
 
