@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   /* border:1px solid red; */
-  height:100vh;
+  height:75vh;
 }
 .App-logo {
   height: 40vmin;
@@ -37,9 +37,61 @@
     transform: rotate(360deg);
   }
 }
+.MainTitle{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 2.5em;
+}
+.arrow-container{
+  display:flex;
+  /* border:1px solid red; */
+  height: 10%;
+}
+
+.arr-con{
+  /* border: 1px solid blue; */
+  display: flex;
+  margin-left: 2.5%;
+  width: 8%;
+}
+.arr-con2{
+  display:flex;
+  /* border: 1px solid blue;s */
+  margin-right: 2.5%;
+  width:8%;
+  height: 100%;
+  justify-content: flex-end;
+}
+.arrow{
+  width: 100%;
+  height: 100%;
+}
+.vote-title{
+  margin-left: 2%;
+  color:rgb(4, 105, 236);
+  cursor: default;
+}
+.vote-title2{
+  margin-right: 2%;
+  color:red;
+  cursor: default;
+}
+.link-container{
+  display: flex;
+  margin-left: 1%;
+  /* border:1px solid red; */
+  width:50%
+}
+.link-container2{
+  display: flex;
+  margin-right: 1%;
+  justify-content: flex-end;
+  /* border:1px solid red; */
+  width:50%
+}
+
 .quote-container{
   /* border:1px solid red; */
-  height:75vh;
+  height:70vh;
   display:flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -105,15 +157,32 @@
   color: #fff;
   background-color: #313843;
   width:100%;
-  }
-  .dark-mode_toggle{
-    /* border:1px solid red; */
-    height:10%;
-  }
-  img{
+}
+.dark-mode_toggle{
+  /* border:1px solid red; */
+  height:80%;
+}
+.vote{
+  width:10%;
+  height:80%;
+}
+.voteIMG{
+  height:100%;
+  width:100%;
+}
+.toggle{
+    cursor: pointer;
     content: 'Dark Mode';
-    width:15%;
+    width:100%;
     height:100%;
+    /* margin-top:1%; */
+  }
+  .new{
+    /* border:1px solid red; */
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .myButton {
@@ -129,6 +198,8 @@
     font-weight:bold;
     padding:6px 12px;
     text-decoration:none;
+    height: 50%;
+    width:10%;
   }
   .myButton:hover {
     background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
@@ -141,21 +212,72 @@
 
   .timer{
     display:flex;
-    justify-content: flex-end;
-    border:1px solid blue;
+    align-items: flex-start;
+    justify-content: center;
+    /* border:1px solid blue; */
+    height: 7vh;
+    /* background-image: url("https://media3.giphy.com/media/129Yiur12UfxNm/giphy.gif"); */
   }
+
   .timerTitle{
+    /* color:blue; */
+    /* background-color: rgba(245, 245, 245, 0.815); */
     display: flex;
-    /* justify-content: space-between; */
-    border:1px solid green;
-    width:3.5%;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid green; */
+    width:10%;
     padding:1%;
+    height:50%;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   .space{
     /* border:1px solid red; */
     margin-left: 10%;
   }
 
+  .election{
+    /* border:1px solid red; */
+    height:35vh;
+    padding:2%;
+    display:flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 8%;
+  }
+  .kanye-gif{
+    display:flex;
+    /* border:1px solid blue; */
+    width:25%;
+    
+  }
+  .giffy{
+    height: 100%;
+
+  }
+  .kanye-gif3{
+    display:flex;
+    /* border:1px solid blue; */
+    width:25%;
+    
+  }
+  .kanye-gif2{
+    display:flex;
+    /* border:1px solid blue; */
+    width:25%;
+    
+  }
+  .twitter-timeline{
+    border:1px solid red;
+    width:100%
+  }
+  .kanye-gif4{
+    display:flex;
+    /* border:1px solid blue; */
+    width:25%;
+    
+  }
   @media only screen and (max-width: 800px) {
     .App{
       height:130vh;
