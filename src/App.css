@@ -139,6 +139,23 @@
     top:1px;
   }
 
+  .timer{
+    display:flex;
+    justify-content: flex-end;
+    border:1px solid blue;
+  }
+  .timerTitle{
+    display: flex;
+    /* justify-content: space-between; */
+    border:1px solid green;
+    width:3.5%;
+    padding:1%;
+  }
+  .space{
+    /* border:1px solid red; */
+    margin-left: 10%;
+  }
+
   @media only screen and (max-width: 800px) {
     .App{
       height:130vh;
