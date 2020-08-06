@@ -22,7 +22,7 @@ export default function Timer() {
     setDarkMode(!darkMode);
   };
   function handleChange(){
-    window.location.href = window.location.pathname + window.location.search + window.location.hash;
+    document.location.reload()
   }
   
     let interval = useRef();
@@ -62,7 +62,7 @@ export default function Timer() {
       
   
     return (
-    <div>
+    <div src={handleChange}>
         <div>
             <h1 style={{marginTop:"1%"}}>2020 US Presidential Election Countdown</h1>
         </div>
@@ -111,14 +111,14 @@ export default function Timer() {
                 <img className="giffy" src={gif}></img>
             </div>
             <div className="kanye-gif2">
-                <iframe className="giffy" src="https://www.youtube.com/embed/pXyryUHItuc?autoplay=1" width="400" height="455" frameborder="0"></iframe>
-            </div>
-            <div className="kanye-gif3">
-            <a class="twitter-timeline" data-width="350" data-height="350" data-theme="light" href="https://twitter.com/kanyewest?ref_src=twsrc%5Etfw">Tweets by kanyewest</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <iframe className="giffy" src="https://www.youtube.com/embed/pXyryUHItuc?autoplay=1" width="500" height="555" frameborder="0"></iframe>
             </div>
             <div className="kanye-gif4">
-            <blockquote class="embedly-card"><h4><a href="https://en.wikipedia.org/wiki/Kanye_West">Kanye West</a></h4><p>Kanye Omari West (; born June 8, 1977) is an American rapper, producer, and fashion designer. His music draws from a range of genres, including hip hop, soul, baroque pop, electro, indie rock, synth-pop, industrial, and gospel.</p></blockquote>
+            <blockquote class="embedly-card"><h1><a href="https://en.wikipedia.org/wiki/Kanye_West">Kanye West</a></h1><p>Kanye Omari West (; born June 8, 1977) is an American rapper, producer, and fashion designer. His music draws from a range of genres, including hip hop, soul, baroque pop, electro, indie rock, synth-pop, industrial, and gospel.</p></blockquote>
                 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+            </div>
+            <div className="kanye-gif3">
+            <a class="twitter-timeline" data-width="350" data-height="460" data-theme="light" href="https://twitter.com/kanyewest?ref_src=twsrc%5Etfw">Tweets by kanyewest</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
 

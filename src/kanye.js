@@ -34,7 +34,7 @@ export default function Kanye() {
 
     <section className="arrow-container">
       <div className="link-container">
-        <Link  style={{textDecoration: "none"}} to="/vote" className="arr-con">
+        <Link  style={{textDecoration: "none"}} to="/vote"  className="arr-con">
           <img className="arrow" src={left} />
         </Link>
           <h2 className="vote-title">About Kanye</h2>

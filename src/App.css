@@ -259,23 +259,27 @@
   .kanye-gif3{
     display:flex;
     /* border:1px solid blue; */
-    width:25%;
+    width:20%;
     
   }
   .kanye-gif2{
     display:flex;
     /* border:1px solid blue; */
     width:25%;
+    height: 28.8em;
     
   }
   .twitter-timeline{
-    border:1px solid red;
+    /* border:1px solid red; */
     width:100%
   }
   .kanye-gif4{
     display:flex;
     /* border:1px solid blue; */
-    width:25%;
+    background: white;
+    padding:1%;
+    width:20%;
+    height:26.5em;
     
   }
   @media only screen and (max-width: 800px) {
